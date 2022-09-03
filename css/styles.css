@@ -145,6 +145,7 @@ body {
   width: 10px;
   height: 16px;
   margin-right: 10px;
+  fill: var(--secondary-color);
 }
 
 .header-icon:hover,
@@ -158,7 +159,7 @@ body {
   width: 16px;
   height: 12px;
   margin-right: 10px;
-  color: #757575;
+   fill: var(--secondary-color);
 }
 .button-li {
   margin-right: 8px;
@@ -263,9 +264,8 @@ li {
 
 /* hover focus ссилок */
 
-.link :hover,
-.link :focus {
-  background-color: var(--current-color);
+.link:hover,
+.link:focus {
   color: var(--current-color);
   background-color: var(--main-light-color);
 }
@@ -276,13 +276,7 @@ li {
   text-align: center;
 }
 
-/* .info footer,
-.address {
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 14px;
-  line-height: 1.7;
-  font-style: normal;
-} */
+
 
 .link-address {
   color: #ffffff;
@@ -617,6 +611,7 @@ a {
 .list-clients {
   display: flex;
   gap: 30px;
+  fill: #AFB1B8;
 }
 
 .section-title {
@@ -652,5 +647,20 @@ a {
 
 .social-list-link {
   background: rgba(255, 255, 255, 0.1);
+ 
 }
 
+
+
+.list-link-clients:hover {
+  fill: var(--current-color);
+  border-color: var(--current-color);
+}
+
+
+.header .link:hover .header-mail,
+.header .link:focus .header-mail,
+.header .link:hover .header-icon,
+.header .link:focus .header-icon {
+  fill: var(--current-color);
+}
