@@ -159,7 +159,7 @@ body {
   width: 16px;
   height: 12px;
   margin-right: 10px;
-   fill: var(--secondary-color);
+  fill: var(--secondary-color);
 }
 .button-li {
   margin-right: 8px;
@@ -275,8 +275,6 @@ li {
   color: #757575;
   text-align: center;
 }
-
-
 
 .link-address {
   color: #ffffff;
@@ -611,7 +609,7 @@ a {
 .list-clients {
   display: flex;
   gap: 30px;
-  fill: #AFB1B8;
+  fill: #afb1b8;
 }
 
 .section-title {
@@ -644,23 +642,30 @@ a {
   display: flex;
 }
 
-
 .social-list-link {
   background: rgba(255, 255, 255, 0.1);
- 
 }
-
-
 
 .list-link-clients:hover {
   fill: var(--current-color);
   border-color: var(--current-color);
 }
 
-
 .header .link:hover .header-mail,
 .header .link:focus .header-mail,
 .header .link:hover .header-icon,
 .header .link:focus .header-icon {
   fill: var(--current-color);
+}
+
+.footer .social-list-icon {
+  fill: var(--main-light-color);
+}
+.portfolio-list-link {
+  display: block;
+}
+.portfolio-list-link:hover,
+.portfolio-list-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
