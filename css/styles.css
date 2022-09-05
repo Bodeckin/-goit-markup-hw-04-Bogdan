@@ -105,7 +105,6 @@ body {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  align-items: center;
 }
 
 .header-studio {
@@ -133,6 +132,8 @@ body {
   line-height: 1.1;
   color: var(--secondary-color);
   letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
 }
 .icon-mail {
   margin-right: 10px;
@@ -254,6 +255,7 @@ li {
 .filtr-btns:focus {
   background-color: var(--current-color);
   color: var(--main-light-color);
+  /* box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12); */
 }
 
 .button:hover,
@@ -342,6 +344,7 @@ li {
 }
 
 .team-item {
+  height: 428px;
   background: #ffffff;
   /* material shadow v1 */
 
@@ -373,6 +376,10 @@ li {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url('../images/hero/Img.jpg');
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 .hero-button {
@@ -447,7 +454,6 @@ li {
   justify-content: center;
   column-gap: 10px;
   margin-top: 16px;
-  padding-bottom: 30px;
 }
 .section-working {
   text-align: center;
@@ -481,10 +487,7 @@ li {
 }
 
 .footer {
-  display: flex;
   background: #2f303a;
-  width: 100%;
-  height: 252px;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -581,20 +584,20 @@ a {
 }
 .icon {
   display: flex;
-  width: 270px;
   height: 120px;
   margin-bottom: 30px;
   justify-content: center;
   align-items: center;
   background-color: #f5f4fa;
+  border-radius: 4px;
 }
 
-.section-client {
+/* .section-client {
   margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-}
+} */
 
 .list-link-clients {
   display: flex;
@@ -604,6 +607,13 @@ a {
   border-radius: 4px;
   width: 170px;
   height: 92px;
+  fill: #afb1b8;
+}
+
+.list-link-clients:hover,
+.list-link-clients:focus {
+  fill: var(--current-color);
+  border-color: var(--current-color);
 }
 
 .list-clients {
@@ -640,15 +650,11 @@ a {
 }
 .container-footer {
   display: flex;
+  align-items: baseline;
 }
 
 .social-list-link {
   background: rgba(255, 255, 255, 0.1);
-}
-
-.list-link-clients:hover {
-  fill: var(--current-color);
-  border-color: var(--current-color);
 }
 
 .header .link:hover .header-mail,
@@ -668,4 +674,14 @@ a {
 .portfolio-list-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.footer .social-list {
+  padding-bottom: 0;
+}
+
+.portfolio:hover,
+.portfolio:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
